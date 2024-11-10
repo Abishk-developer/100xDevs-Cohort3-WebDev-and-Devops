@@ -60,7 +60,7 @@ function Counter() {
 // IsEven component that checks if the count is even and displays the result
 function IsEven() {
     // useRecoilValue hook to get the computed value from evenSelector
-    const isEven = useRecoilValue(evenSelector);
+    const isEven = useRecoilValue(evenSelector); 
 
     return (
         <div>
