@@ -1,4 +1,46 @@
-// Create an interface UserType that has the following properties: firstName, lastName, and age.
+// Create an interface User that has the following properties: firstName, lastName, and age.
+interface User {
+    firstName: string;
+    lastName: string;
+    age: number;
+};
+
+// Create a function greet that takes a user of type User and logs a greeting message.
+function greet(user: User) {
+    // Log a message that greets the user by their full name and age.
+    console.log(`Hello ${user.firstName} ${user.lastName}, you are ${user.age} years old.`);
+}
+
+// Create a user object of type User. 
+let user: User = {
+    firstName: "Bharat",
+    lastName: "Kumar",
+    age: 21,
+};
+
+// Call the greet function with the user object.
+greet(user);
+
+// Create an interface Person that has the following properties: name and age.
+interface Person {
+    name: string;
+    age: number;
+}
+
+// Create an interface Employee that has the following properties: department.
+interface Employee {
+    department: string
+}
+
+// Create a type TeamLead that is an intersection of Person and Employee.
+type TeamLead = Person & Employee; 
+
+// Create a TeamLead object. 
+let teamLead: TeamLead = {
+    name: "Bharat",
+    age: 21,
+    department: "CSE"
+}// Create an interface UserType that has the following properties: firstName, lastName, and age.
 interface UserType {
     firstName: string,
     lastName: string,
