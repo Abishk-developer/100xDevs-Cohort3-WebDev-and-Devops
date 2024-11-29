@@ -31,7 +31,7 @@ function Counter() {
             <CurrentCount count={count} />
 
             {/* Render the Increase component and pass setCount as prop */}
-            <Increase setCount={setCount} />
+            <Increase setCount={setCount} />  
 
             {/* Render the Decrease component and pass setCount as prop */}
             <Decrease setCount={setCount} />
